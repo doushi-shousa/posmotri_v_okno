@@ -45,7 +45,7 @@ ol {
   width: 100%;
   display: flex;
   align-items: flex-end;
-  gap: 30px;
+  gap: 28px;
 }
 
 .result {
@@ -66,7 +66,7 @@ ol {
 }
 
 .search-form {
-  margin-top: 18px;
+  margin-top: 16px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -127,7 +127,7 @@ input:focus {
   font-weight: 400;
   line-height: 21.6px;
   text-align: left;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .search-form__checkbox-list {
@@ -150,7 +150,6 @@ input:focus {
   cursor: pointer;
   width: 19px;
   height: 19px;
-  margin: 0;
   border: 1px solid rgba(255, 255, 255, 1);
   background-color: transparent;
   margin-right: 5px;
@@ -204,7 +203,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__details {
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .title {
@@ -214,7 +216,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   line-height: 70.5px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
-  margin-bottom: 24px;
+  margin-left: 2px;
 }
 
 .content__accent {
@@ -222,18 +224,17 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__list {
-  height: 298px;
+  height: 300px;
   overflow: auto;
   position: relative;
 }
 
 .content__list-item:not(:last-of-type) {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .content__card-link {
-  display: block;
-  height: 107px;
+  display: flex;
   margin: 2px;
   padding: 2px;
   text-decoration: none;
@@ -245,6 +246,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card {
+  flex-grow: 1;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -273,7 +275,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin: 2px 0 4px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -297,6 +299,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card-thumbnail {
+  display: block;
   width: 194px;
   height: 103px;
 }
